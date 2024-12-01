@@ -1,4 +1,6 @@
-# Course Description
+# Introduction to front end development
+
+## Course Description
 
 This course is the first in a series aimed at enhancing our web development skills, specifically preparing us to use Bootstrap in creating a biographical page. By the end of this course, we will be able to:
 
@@ -8,3 +10,8 @@ This course is the first in a series aimed at enhancing our web development skil
 - Use CSS to control the appearance of a webpage
 - Understand what React is and its purpose
 - Describe the applications and characteristics of popular UI frameworks
+
+## Time Invested in the Training
+
+- **Total Hours:** 353 minutes (currently being updated)
+- **Last updated:** 01/12/2024
