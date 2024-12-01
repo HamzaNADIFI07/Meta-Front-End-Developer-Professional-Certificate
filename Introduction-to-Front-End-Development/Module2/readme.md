@@ -17,7 +17,7 @@ Headings allow you to display titles and subtitles on your webpage.
 ```
 The following displays in the web browser:
 
-![HEADING](Introduction-to-Front-End-Development/Module2/images/img1.png)
+![HEADING](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img1.png)
 
 ## Paragraphs
 Paragraphs contain text content.
@@ -31,7 +31,7 @@ Paragraphs contain text content.
 ```
 The following displays in the web browser: 
 
-![PARAGRAPH](Introduction-to-Front-End-Development/Module2/images/img2.png)
+![PARAGRAPH](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img2.png)
 
 **Note** that putting content on a new line is ignored by the web browser.
 
@@ -46,7 +46,7 @@ As you've learned, line breaks in the paragraph tag line are ignored by HTML. In
 ```
 The following displays in the web browser: 
 
-![LineBreaks](Introduction-to-Front-End-Development/Module2/images/img3.png)
+![LineBreaks](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img3.png)
 
 **Strong**
 
@@ -59,7 +59,7 @@ Strong tags can be used to indicate that a range of text has importance.
 ```
 The following displays in the web browser: 
 
-![Strong](Introduction-to-Front-End-Development/Module2/images/img4.png)
+![Strong](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img4.png)
 
 **Bold**
 
@@ -72,11 +72,11 @@ Bold tags can be used to draw the reader's attention to a range of text.
 ```
 The following displays in the web browser: 
 
-![Bold](Introduction-to-Front-End-Development/Module2/images/img5.png)
+![Bold](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img5.png)
 
 The following displays in the web browser: 
 
-![Bold2](Introduction-to-Front-End-Development/Module2/images/img6.png)
+![Bold2](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img6.png)
 
 Bold tags should be used to draw attention but not to indicate that something is more important. Consider the following example:
 
@@ -86,7 +86,7 @@ The three core technologies of the Internet are <b>HTML</b>, <b>CSS</b> and <b>J
 
 The following displays in the web browser: 
 
-![Bold3](Introduction-to-Front-End-Development/Module2/images/img7.png)
+![Bold3](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img7.png)
 
 ## Emphasis
 
@@ -99,7 +99,7 @@ Emphasis tags can be used to add emphasis to text.
 ```
 The following displays in the web browser: 
 
-![Emphasis](Introduction-to-Front-End-Development/Module2/images/img8.png)
+![Emphasis](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img8.png)
 
 ## Italics
 Italics tags can be used to offset a range of text.
@@ -110,7 +110,7 @@ Italics tags can be used to offset a range of text.
 ```
 The following displays in the web browser: 
 
-![Italics](Introduction-to-Front-End-Development/Module2/images/img9.png)
+![Italics](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img9.png)
 
 ## Emphasis vs. Italics
 By default both tags will have the same visual effect in the web browser. The only difference is the meaning.
@@ -122,7 +122,7 @@ I <em>really</em> want ice cream.
 ```
 The following displays in the web browser: 
 
-![EmphasisVsItalics](Introduction-to-Front-End-Development/Module2/images/img10.png)
+![EmphasisVsItalics](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img10.png)
 
 Italics represent off-set text and should be used for technical terms, titles, a thought or a phrase from another language, for example:
 
@@ -131,7 +131,7 @@ My favourite book is <i>Dracula</i>.
 ```
 The following displays in the web browser: 
 
-![EmphasisVsItalics2](Introduction-to-Front-End-Development/Module2/images/img11.png)
+![EmphasisVsItalics2](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img11.png)
 
 Screen readers will not announce any difference if an italics tag is used.
 
@@ -149,7 +149,7 @@ Lists can be unordered using the `<ul>` tag. List items are specified using the 
 ```
 This displays in the web browser as:
 
-![Lists](Introduction-to-Front-End-Development/Module2/images/img12.png)
+![Lists](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img12.png)
 
 Lists can also be ordered using the `<ol>` tag. Again, list items are specified using the `<li>` tag.
 
@@ -162,7 +162,7 @@ Lists can also be ordered using the `<ol>` tag. Again, list items are specified 
 ```
 This displays as the following in the web browser.
 
-![Lists2](Introduction-to-Front-End-Development/Module2/images/img13.png)
+![Lists2](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img13.png)
 
 ## Div tags
 
@@ -177,7 +177,7 @@ The following example shows a `<div>` element that contains a paragraph element:
 ```
 This displays as the following in the web browser.
 
-![DivTags](Introduction-to-Front-End-Development/Module2/images/img14.png)
+![DivTags](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img14.png)
 
 It can be nested inside other elements, for example:
 
@@ -190,7 +190,7 @@ It can be nested inside other elements, for example:
 ```
 This displays in the web browser as:
 
-![DivTags2](Introduction-to-Front-End-Development/Module2/images/img15.png)
+![DivTags2](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img15.png)
 
 As mentioned, the div has no impact on content unless it is styled by CSS. Let’s add a small CSS rule that styles all divs on the page.
 
@@ -211,7 +211,7 @@ Don't worry about the meaning of the CSS just yet, you'll explore CSS further in
 ```
 This displays in the web browser as:
 
-![DivTags3](Introduction-to-Front-End-Development/Module2/images/img16.png)
+![DivTags3](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img16.png)
 
 Div elements are an important part of building webpages. More advanced usage of div elements will be explored in another course.
 
