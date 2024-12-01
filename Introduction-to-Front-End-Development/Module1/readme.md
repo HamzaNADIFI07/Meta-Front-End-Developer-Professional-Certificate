@@ -93,13 +93,13 @@ The first digit of an HTTP status code indicates the category of the response: I
 
 The common status codes you'll encounter for each category are:
 
-`**1XX Informational**``
+`1XX Informational`
 | Status Code | Reason Phrase     | Description                                                                 |
 |-------------|-------------------|-----------------------------------------------------------------------------|
 | 100         | Continue          | The server received the request headers and should continue to send the request body. |
 | 101         | Switching Protocols | The client has requested the server to switch protocols and the server has agreed to do so. |
 
-`**2XX Successful**``
+`2XX Successful`
 | Status Code | Reason Phrase    | Description                                                                 |
 |-------------|------------------|-----------------------------------------------------------------------------|
 | 200         | OK               | Standard response returned by the server to indicate it successfully processed the request. |
@@ -107,13 +107,13 @@ The common status codes you'll encounter for each category are:
 | 202         | Accepted         | The server accepted the request for processing but the processing has not yet been completed. |
 | 204         | No Content       | The server successfully processed the request but is not returning any content. |
   
-`**3XX Redirection**``
+`3XX Redirection`
 | Status Code | Reason Phrase     | Description                                                             |
 |-------------|-------------------|-------------------------------------------------------------------------|
 | 301         | Moved Permanently | This request and all future requests should be sent to the returned location. |
 | 302         | Found             | This request should be sent to the returned location.                   |
 
-`**4XX Client Error**``
+`4XX Client Error`
 | Status Code | Reason Phrase      | Description                                                                 |
 |-------------|--------------------|-----------------------------------------------------------------------------|
 | 400         | Bad Request        | The server cannot process the request due to a client error, e.g., invalid request or transmitted data is too large. |
@@ -122,7 +122,7 @@ The common status codes you'll encounter for each category are:
 | 404         | Not Found          | The server did not find the requested resource.                            |
 | 405         | Method Not Allowed | The web server does not support the HTTP method used.                      |
 
-`**5XX Server Error**``
+`5XX Server Error`
 | Status Code | Reason Phrase          | Description                                                                     |
 |-------------|------------------------|---------------------------------------------------------------------------------|
 | 500         | Internal Server Error   | A generic error status code given when an unexpected error or condition occurred while processing the request. |
@@ -179,7 +179,7 @@ You've learned that computers need IP addresses to communicate with each other. 
 Your computer communicates over User Datagram Protocol (UDP) using the protocol with a type of server called a DHCP server. The server keeps track of computers on the network and their IP addresses. It will assign your computer an IP address and respond over the protocol to let it know which IP address to use. Once your computer has an IP address, it can communicate with other computers on the network.
 
 ### Domain Name System Protocol (DNS)
-Your computer needs a way to know with which IP address to communicate when you visit a website in your web browser, for example, `**meta.com**``. The Domain Name System Protocol, commonly known as DNS, provides this function. Your computer then checks with the DNS server associated with the domain name and then returns the correct IP address.
+Your computer needs a way to know with which IP address to communicate when you visit a website in your web browser, for example, `meta.com`. The Domain Name System Protocol, commonly known as DNS, provides this function. Your computer then checks with the DNS server associated with the domain name and then returns the correct IP address.
 
 ### Internet Message Access Protocol (IMAP)
 Do you check your emails on your mobile or tablet device? Or maybe you use an email application on your computer?
