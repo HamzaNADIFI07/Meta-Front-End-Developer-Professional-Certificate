@@ -1,0 +1,95 @@
+/* Styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mise en page de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f7;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour l'en-tête */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #3a3a3a;
+    font-size: 2.5em;
+}
+
+/* Styles pour l'image */
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#photo {
+    border: 5px solid #FA9F42;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour les titres h2 */
+h2 {
+    color: #444;
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+/* Listes */
+ul.list {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+ul.list li {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+/* Lien du profil */
+.profile-link {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #FA9F42;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #FA9F42;
+    border-radius: 5px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.profile-link:hover {
+    background-color: #FA9F42;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Espacements des sections */
+section {
+    margin-bottom: 20px;
+}

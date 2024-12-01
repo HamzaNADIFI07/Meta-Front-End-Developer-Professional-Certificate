@@ -13,5 +13,5 @@ This course is the first in a series aimed at enhancing our web development skil
 
 ## Time Invested in the Training
 
-- **Total Hours:** 353 minutes (currently being updated)
+- **Total Hours:** 497 minutes (currently being updated)
 - **Last updated:** 01/12/2024
