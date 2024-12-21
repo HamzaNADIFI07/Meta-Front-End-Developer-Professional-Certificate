@@ -423,13 +423,13 @@ HSL is a newer color model defined as Hue (H), Saturation (S) and Lightness (L).
 
 Think of a rainbow that has been turned into a full circle. This represents the Hue. The Hue value is the degree value on this circle, from 0 degrees to 360 degrees. 0 is red, 120 is green and 240 is blue.
 
-![HSLValue](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img17.png)
+![HSLValue](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/ad8eac300a5a2907a316b711be70a8276ec4b42b/Introduction-to-Front-End-Development/Module2/images/img17.png)
 
 Saturation is the distance from the center of the circle to its edge. The saturation value is represented by a percentage from 0% to 100% where 0% is the center of the circle and 100% is its edge. For example, 0% will mean that the color is more grey and 100% represents the full color.
 
 Lightness is the third element of this color model. Think of it as turning the circle into a 3D cylinder where the bottom of the cylinder is more black and toward the top is more white. Therefore, lightness is the distance from the bottom of the cylinder to the top. Again, lightness is represented by a percentage from 0% to 100% where 0% is the bottom of the cylinder and 100% is its top. In other words, 0% will mean that the color is more black and 100% is white.
 
-![HSLValue2](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img18.png)
+![HSLValue2](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/ad8eac300a5a2907a316b711be70a8276ec4b42b/Introduction-to-Front-End-Development/Module2/images/img18.png)
 
 In CSS, you use the `hsl` keyword to define a color with HSL.
 
@@ -612,7 +612,7 @@ To align the element to the center, set its `margin` property to `auto`. The `au
 ```
 The result is the `child` element is centered within the `parent` element:
 
-![HTMLElementCenterAlignment](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img19.png)
+![HTMLElementCenterAlignment](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/ad8eac300a5a2907a316b711be70a8276ec4b42b/Introduction-to-Front-End-Development/Module2/images/img19.png)
 
 It is important to note that this works because the `div` element is a block-level element.  
 
@@ -664,7 +664,7 @@ In the following example, the image will be aligned to the right of the `div` el
 ```
 The following displays in the web browser:  
 
-![HTMLElementLeft/RightAlignment](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/5de66d735e1dc072a05924390cac347090b23954/Introduction-to-Front-End-Development/Module2/images/img20.png)
+![HTMLElementLeft/RightAlignment](https://github.com/HamzaNADIFI07/Meta-Front-End-Developer-Professional-Certificate/blob/ad8eac300a5a2907a316b711be70a8276ec4b42b/Introduction-to-Front-End-Development/Module2/images/img20.png)
 
 
 
