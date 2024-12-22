@@ -29,7 +29,7 @@ This course is the first in a series aimed at enhancing our web development skil
 
 ## Next Steps
 
-I will continue with the next course in the series: **Introduction to JavaScript**, where I will start learning the basics of JavaScript to add interactivity and functionality to web pages. 
+I will continue with the next course in the series: **Programming with JavaScript**, where I will start learning the basics of JavaScript to add interactivity and functionality to web pages. 
 
 ## Certification Earned
 
