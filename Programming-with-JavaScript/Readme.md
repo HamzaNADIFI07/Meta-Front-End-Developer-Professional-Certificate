@@ -88,3 +88,8 @@ After completing this module, we will be able to:
 In the final module, you'll learn about the graded assessment. After you complete the individual units in this module, you'll synthesize the skills you gained from the course to create code for the "Little lemon receipt maker ". 
 
 You'll also have to opportunity to reflect on the course content and the learning path that lies ahead.
+
+### Time Invested in the Training
+
+- **Total Hours:** 113 minutes (currently being updated)
+- **Last updated:** 22/12/2024
