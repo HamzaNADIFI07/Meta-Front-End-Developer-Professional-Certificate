@@ -1335,7 +1335,7 @@ To summarise, you learned that you can loop over arrays using the `for of` loop.
 You now have all the ingredients that you need to **loop over any object's own property keys and values**.
 
 Here's a very simple example of doing just that:
-```
+```js
 var clothingItem = {
     price: 50,
     color: 'beige',
@@ -1381,4 +1381,338 @@ This example might feel a bit convoluted, but its purpose is to demo the fact th
 
 Feel free to run the `testBracketsDynamicAccess()` function a few times, and you'll notice that sometimes the value that gets output is `15`, and sometimes it's `orange`, although I'm always accessing the `drone[dynamicKey]` key. Since the value of the `dynamicKey` is populated on the `Math.random()` invocation, sometimes that expression evaluates to `drone["speed"]`, and other times that expression evaluates to `drone["color"]`.
 
+## Template literals examples
 
+The aim of this reading is to help you understand how template literals work.
+
+#### What are template literals?
+Template literals are an alternative way of working with strings, which was introduced in the ES6 addition to the JavaScript language.
+
+Up until ES6, the only way to build strings in JavaScript was to delimit them in either single quotes or double quotes:
+```js
+"Hello, World!"
+```
+Alongside the previous ways to build strings, ES6 introduced the use of backtick characters as delimiters:  
+
+```js
+`Hello, World!`
+```
+The above code snippet is an example of a template string, which is also known as a template literal.
+
+_Note: On most keyboards, the backtick character can be located above the TAB key, to the left of the number 1 key_.
+
+ With template literals, an expression can be embedded in a placeholder. A placeholder is represented by ${}, with anything within the curly brackets treated as JavaScript and anything outside the brackets treated as a string:  
+
+#### Differences between a template and regular string
+There are several ways in which a template string is different from a regular string.
+
+- First, it allows for **variable interpolation**:
+
+```js
+let greet = "Hello";
+let place = "World";
+console.log(`${greet} ${place} !`) //display both variables using template literals
+```
+The above console log will output:  
+
+```
+Hello World !
+```
+Essentially, using template literals allows programmers to embed variables directly in between the backticks, without the need to use the + operator and the single or double quotes to delimit string literals from variables. In other words, in ES5, the above example would have to be written as follows:  
+```js
+var greet = "Hello";
+var place = "World";
+console.log(greet + " " + place + "!"); //display both variables without using template literals
+```
+- Besides variable interpolation, template strings can span multiple lines.
+
+For example, this is perfectly good syntax:
+```
+`Hello,
+World
+!
+`
+```
+Notice that this can't be done using **string literals** (that is, strings delimited in single or double quotes):  
+```
+"Hello,
+World"
+```
+The above code, when run, will throw a syntax error.
+
+Put simply, template literals allow for multi-line strings - something that simply isn't possible with string literals.
+
+- Additionally, the reason why it's possible to interpolate variables in template literals is because this syntax actually allows for **expression evaluation**. 
+
+In other words, this:
+```js
+//it's possible to perform arithmetic operation inside a template literal expression
+console.log(`${1 + 1 + 1 + 1 + 1} stars!`) 
+```
+The above example will console log the following string: `5 stars!`.
+
+This opens up a host of possibilities. For example, it's possible to evaluate a ternary expression inside a template literal.
+
+
+Some additional use cases of template literals are **nested template literals** and **tagged templates**. However, they are a bit more involved and are beyond the scope of this reading. 
+
+## Data Structures examples
+In this reading, we'll learn about some of the most common examples of data structures.
+
+The focus will be on working with the Object, Array, Map and Set data structures in JavaScript, through a series of examples.
+
+_Note that this reading will not include a discussion of some data structures that exist in some other languages, such as Queues or Linked Lists.  Although these data structures (and other data structures too!) can be custom-coded in JavaScript, the advanced nature of these topics and the difficulty with implementing related exercises means they are beyond the scope of this reading._
+
+#### Working with arrays in JavaScript
+Previously, you've covered a lot of concepts related to how to work with JavaScript arrays.
+
+However, there are still a few important topics that can be covered, and one of those is, for example, working with some built-in methods.
+
+In this reading, the focus is on three specific methods that exist on arrays:
+
+1. forEach 
+
+2. filter
+
+3. map
+
+Let's explore these methods.
+
+#### The `forEach()` method
+Arrays in JavaScript come with a handy method that allows you to loop over each of their members. 
+
+Here's the basic syntax:
+
+```js
+const fruits = ['kiwi','mango','apple','pear'];
+function appendIndex(fruit, index) {
+    console.log(`${index}. ${fruit}`)
+}
+fruits.forEach(appendIndex);
+```
+The result of running the above code is this:  
+
+```
+0. kiwi
+1. mango
+2. apple
+3. pear
+```
+To explain the syntax, the `forEach()` method accepts **a function that will work on each array item**. That function's first parameter is the current array item itself, and the second (optional) parameter is the index.
+
+Very often, the function that the `forEach()` method needs to use is passed in directly into the method call, like this:
+
+```js
+const veggies = ['onion', 'garlic', 'potato'];
+veggies.forEach( function(veggie, index) {
+    console.log(`${index}. ${veggie}`);
+});
+```
+This makes for more compact code, but perhaps somewhat harder to read. To increase readability, sometimes arrow functions are used. You can find out more about arrow functions in the additional reading.
+
+#### The `filter()` method
+Another very useful method on the array is the `filter()` method. It filters your arrays **based on a specific test**. Those array items that pass the test are returned.
+
+Here's an example:
+
+```js
+const nums = [0,10,20,30,40,50];
+nums.filter( function(num) {
+    return num > 20;
+})
+```
+Here's the returned array value:  
+
+```js
+[30,40,50]
+```
+Similar to the `forEach()` method, the `filter()` method also accepts a function and that function performs some work on each of the items in the array.
+
+#### The `map` method
+Finally, there's a very useful `map` method. 
+
+This method is used to map each array item over to another array's item, based on whatever work is performed inside the function that is passed-in to the map as a parameter. 
+
+For example:
+```js
+[0,10,20,30,40,50].map( function(num) {
+    return num / 10
+})
+```
+The return value from the above code is:  
+
+```
+[0,1,2,3,4,5]
+```
+As already discussed, choosing a proper data structure affects the very code that you can write. This is because the data structure itself comes with some built-in functionality that makes it easier to perform certain tasks or makes it harder or even impossible without converting your code to a proper data structure.
+
+Now that you've covered the methods, let's explore how to work with different built-in data structures in JavaScript.
+
+#### Working with Objects in JavaScript
+A lot of the information on how to work with objects in JavaScript has already been covered in this course.
+
+The example below demonstrates how to use the object data structure to complete a specific task. This task is to convert an object to an array:
+```js
+const result = [];
+const drone = {
+    speed: 100,
+    color: 'yellow'
+}
+const droneKeys = Object.keys(drone);
+droneKeys.forEach( function(key) {
+    result.push(key, drone[key])
+})
+console.log(result)
+```
+This is the result of executing the above code:  
+
+```js
+['speed',100,'color','yellow']
+```
+Although this is possible and works, having to do something like this might mean that you haven't chosen the correct data structure to work with in your code.
+
+On the flip side, sometimes you don't get to pick the data structure you're working with. Perhaps that data comes in from a third-party data provider and all you can do is code your program so that it consumes it. You'll learn more about the interchange of data on the web when you learn about JSON (JavaScript Object Notation).
+
+#### Working with Maps in JavaScript
+To make a new Map, you can use the `Map` constructor:
+```js
+new Map();
+```
+A map can feel very similar to an object in JS.
+
+However, it doesn't have inheritance. No prototypes! This makes it useful as a data storage.
+
+For example:
+```js
+let bestBoxers = new Map();
+bestBoxers.set(1, "The Champion");
+bestBoxers.set(2, "The Runner-up");
+bestBoxers.set(3, "The third place");
+
+console.log(bestBoxers);
+```
+Here's the console output:  
+```js
+Map(3) {1 => 'The Champion', 2 => 'The Runner-up', 3 => 'The third place'}
+```
+To get a specific value, you need to use the get() method. For example:  
+
+```js
+bestBoxers.get(1); // 'The Champion'
+```
+#### Working with Sets in JavaScript
+A set is a collection of unique values.
+
+To build a new set, you can use the `Set` constructor:
+```js
+new Set();
+```
+The `Set` constructor can, for example, accept an array.
+
+This means that we can use it to quickly filter an array for unique members.
+```js
+const repetitiveFruits = ['apple','pear','apple','pear','plum', 'apple'];
+const uniqueFruits = new Set(repetitiveFruits);
+console.log(uniqueFruits);
+```
+The above code outputs the following in the console:  
+
+```js
+{'apple', 'pear', 'plum'}
+```
+Besides the built-in data structures in JavaScript, it's possible to build non-native, custom data structures.
+
+These data structures come built-in natively in some other programming languages  or even those other programming languages don't support them natively.
+
+Some more advanced data structures that have not been covered include:
+
+- Queues
+
+- Linked lists (singly-linked and doubly-linked)
+
+- Trees
+
+- Graphs
+## Using Spread and Rest
+In this reading, you'll learn how to join arrays, objects using the rest operator. You will also discover how to use the spread operator to:
+
+- Add new members to arrays without using the `push()` method,
+
+- Convert a string to an array and
+
+- Copy either an object or an array into a separate object 
+
+**Recall that the `push()` and `pop()` methods are used to add and remove items from the end of an array.**
+#### Join arrays, objects using the rest operator
+Using the spread operator, it's easy to concatenate arrays:
+```js
+const fruits = ['apple', 'pear', 'plum']
+const berries = ['blueberry', 'strawberry']
+const fruitsAndBerries = [...fruits, ...berries] // concatenate
+console.log(fruitsAndBerries); // outputs a single array
+```
+Here's the result:  
+
+```js
+['apple', 'pear', 'plum', 'blueberry', 'strawberry']
+```
+It's also easy to join objects:  
+
+```js
+const flying = { wings: 2 }
+const car = { wheels: 4 }
+const flyingCar = {...flying, ...car}
+console.log(flyingCar) // {wings: 2, wheels: 4}
+```
+#### Add new members to arrays without using the `push()` method
+Here's how to use the spread operator to easily add one or more members to an existing array:
+
+```js
+let veggies = ['onion', 'parsley'];
+veggies = [...veggies, 'carrot', 'beetroot'];
+console.log(veggies);
+
+```
+Here's the output:
+
+```js
+['onion', 'parsley', 'carrot', 'beetroot']
+```
+#### Convert a string to an array using the spread operator
+Given a string, it's easy to spread it out into separate array items:
+
+```js
+const greeting = "Hello";
+const arrayOfChars = [...greeting];
+console.log(arrayOfChars); //  ['H', 'e', 'l', 'l', 'o']
+```
+#### Copy either an object or an array into a separate one
+Here's how to copy an object into a completely separate object, using the spread operator.
+```js
+const car1 = {
+    speed: 200,
+    color: 'yellow'
+}
+const car 2 = {...car1}
+
+car1.speed = 201
+
+console.log(car1.speed, car2.speed)
+```
+The output is `201, 200`.
+
+You can copy an array into a completely separate array, also using the spread operator, like this:
+```js
+const fruits1 = ['apples', 'pears']
+const fruits2 = [...fruits1]
+fruits1.pop()
+console.log(fruits1, "not", fruits2)
+```
+This time, the output is:
+
+```js
+['apples'] 'not' ['apples','pears']
+```
+Note that the spread operator only performs a shallow copy of the source array or object. 
+
+There are many more tricks that you can perform with the spread operator. Some of them are really handy when you start working with a library such as React.
