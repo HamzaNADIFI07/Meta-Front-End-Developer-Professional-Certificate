@@ -91,5 +91,5 @@ You'll also have to opportunity to reflect on the course content and the learnin
 
 ### Time Invested in the Training
 
-- **Total Hours:** 432 minutes (currently being updated)
+- **Total Hours:** 446 minutes (currently being updated)
 - **Last updated:** 25/12/2024
