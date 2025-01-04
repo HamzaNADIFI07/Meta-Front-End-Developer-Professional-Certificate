@@ -91,5 +91,15 @@ You'll also have to opportunity to reflect on the course content and the learnin
 
 ### Time Invested in the Training
 
-- **Total Hours:** 537 minutes (currently being updated)
+- **Total Hours:** 577 minutes (currently being updated)
 - **Last updated:** 04/01/2025
+
+## Next Steps
+
+I will continue with the next course in the series: **Version control**, where I will learn about how modern software developers collaborate on large projects.
+
+## Certification Earned
+
+- **Certification Name**: *Meta Front-End Developer: Programming with JavaScript*  
+- **Date Obtained**: 04/01/2025  
+- **Credential Link**: <br/><br/><br/>![Certification](./Coursera%20LOEJASTXJYOV-1.png)
