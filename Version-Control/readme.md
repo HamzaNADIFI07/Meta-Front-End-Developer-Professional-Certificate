@@ -47,5 +47,17 @@ After completing this module, we will be able to:
 
 ### Time Invested in the Training
 
-- **Total Hours:** 193 minutes (currently being updated)
+- **Total Hours:** 209 minutes (currently being updated)
 - **Last updated:** 05/01/2025
+
+## Next Steps
+
+I will continue with the next course in the series: **HTML and CSS in depth**, where I’ll use software development tools like HTML to build attractive web pages that work well—and I’ll use structured semantic data to control how websites appear to the end user. 
+
+I will then dive deeper into CSS by applying increasingly specific styling to various elements. I’ll learn to use Bootstrap’s grid system to create layouts and work with components and themes. Finally, I’ll explore debugging and learn how it can be utilized to banish common front-end errors.
+
+## Certification Earned
+
+- **Certification Name**: *Meta Front-End Developer: Version Control*  
+- **Date Obtained**: 05/01/2025  
+- **Credential Link**: <br/><br/><br/>![Certification](./Coursera%201P9N12SUZ8R4-1.png)
