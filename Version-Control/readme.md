@@ -47,5 +47,5 @@ After completing this module, we will be able to:
 
 ### Time Invested in the Training
 
-- **Total Hours:** 46 minutes (currently being updated)
-- **Last updated:** 04/01/2025
+- **Total Hours:** 193 minutes (currently being updated)
+- **Last updated:** 05/01/2025
