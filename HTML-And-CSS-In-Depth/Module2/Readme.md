@@ -1006,3 +1006,262 @@ The examples covered here illustrate that adding simple code for pseudo-elements
 | ::first-line   | p::first-line { }      | Selects first line of every <p> element                       |
 | ::placeholder  | input::placeholder { } | Selects input elements with "placeholder" attribute specified |
 | ::marker       | ::marker { }           | Selects markers in a list                                     |
+
+#### Text effects cheat sheet
+
+The effects developers use on text items on a web page are chosen mainly because of their styling and layout style. Interesting effects can be created by combining these with other CSS properties. 
+
+The visual representation of text content can be changed by four main properties: text-transform, font-style, font-weight and text-decoration.
+
+| Property        | Values                                             | Description                                                                                        |
+|-----------------|----------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Text-transform  | None, uppercase, lowercase, capitalize, full-width | Modify text properties                                                                             |
+| Font-style      | Normal, italic, oblique                            | Font styling options such as italics                                                               |
+| Font-weight     | Normal, weight, lighter, bolder, 100-900           | Other font styling options like change of emphasis such as making text bold                        |
+| Text-decoration | None, underline, overline, line-through            | Shorthand for auxiliary elements added to text using other properties such as text-decoration-line |
+
+The additional properties that help configure styling effects are below.
+
+| Text-align                | For horizontal alignment of text                                                         |
+|---------------------------|------------------------------------------------------------------------------------------|
+| Text-align-last           | Alignment for the last line when text set to justify                                     |
+| Text-combine-upright      | Multiple characters into the space of a single character placed upright like in Mandarin |
+| Text-decoration-color     | Color configuration of the text-decoration                                               |
+| Text-decoration-line      | Line type in text-decoration such as underline, overline and so on                       |
+| Text-decoration-style     | Styles added to lines under text such as wavy, dotted and so on                          |
+| Text-decoration-thickness | Thickness of the decoration line                                                         |
+| Text-emphasis             | Shorthand for other properties such as color and style                                   |
+| Text-indent               | The indentation of the first line                                                        |
+| Text-justify              | Specifies the justification method used when text-align is "justify"                     |
+| Text-orientation          | Orientation of text in a line such as sideways, upright and so on                        |
+| Text-shadow               | Adds shadow to text                                                                      |
+| Text-underline-position   | Declare position of underline set using the text-decoration property                     |
+
+Other than these, there are some more properties that help modify the alignment and define the scope of text with their containers. 
+
+| Property      | Values                                  | Description                                                     |
+|---------------|-----------------------------------------|-----------------------------------------------------------------|
+| Text-overflow | Clip, ellipsis                          | Determines overflow behavior of text with the container         |
+| Word-wrap     | Normal, anywhere, break-word            | Applies to inline elements, alias for overflow-wrap             |
+| Word-break    | Normal, break-all, keep-all, break-word | Used for long words to decide if words should break or overflow |
+| Writing-mode  | Horizontal-tb, vertical-lr, vertical-rl | Can set the text direction vertical or horizontal               |
+
+The properties mentioned are ones that can be used for giving effects to text. 
+
+#### Animation and effects cheat sheet
+
+##### Transform property
+
+**Syntax**
+
+transform: transform function-values
+
+##### Example
+```css
+.sample-class {
+    transform: rotate(60deg);
+}
+```
+##### Keyword-value type: none
+```css
+.sample-class {
+    transform: none;
+}
+```
+**Function-value type: matrix()**
+
+Variations: matrix(), matrix3d()
+```css
+.sample-class {
+     transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+}
+```
+**Function-value type: rotate(deg)**
+
+Variations: rotate(), rotate3d(), rotateX(), rotate(), rotateZ()
+```css
+.sample-class {
+    transform: rotate3d(3,2,1, 100deg);
+}
+```
+Note: In rotate3d(), the respective values represent x, y, z co-ordinate and degree of rotations
+
+**Function-value type: translate(x,y)**
+
+Variations: translate(), translate3d(), translateX(), translateY(), translateZ()
+
+```css
+.sample-class {
+    transform: translate3d(10px, 20px, 30px);
+}
+```
+Note: In translate3d(), the respective values represent translation along the x, y, z co-ordinates
+
+**Function-value type: scale(factor)**
+
+Variations: scale(), scale3d(), scaleX(), scaleY(), scaleZ()
+```css
+.sample-class {
+    transform: scale3d(2, 1, 0.3);
+}
+```
+Note: In scale3d(), the respective values represent scaling times along the x, y, z co-ordinates
+
+**Function-value type: skew(deg, deg)**
+
+Variations: skew(), skewX(), skewY()
+```css
+.sample-class {
+    transform: skew(100deg);
+}
+```
+**Global value types:**
+```css
+.sample-class {
+    transform: inherit;
+}
+```
+```css
+.sample-class {
+    transform: initial;
+}
+```
+```css
+.sample-class {
+    transform: revert;
+}
+```
+```css
+.sample-class {
+    transform: revert-layer;
+}
+```
+```css
+.sample-class {
+    transform: unset;
+}
+```
+
+#### Multiple transform over the same element
+
+##### Syntax
+Transform can be applied for rotate(), scale() and translate() that can be listed together. Each of these properties can have their own values and the actions will give a combined effect. 
+
+**Example**
+```css
+.sample-class {
+    transform: rotate(45deg) scale(1.5) translate(45px);
+}
+```
+Additional property under transform:transform-origin
+
+Determines the anchor point for the centering of transform.
+
+**Example**
+```css
+.sample-class {
+    transform-origin: 10px 10px;
+}
+```
+```css
+.sample-class {
+    transform-origin: right bottom;
+}
+```
+##### Transition property
+**Transition shorthand**
+
+Transition shorthand has four following sub-properties, each of which can also be individually defined. 
+
+- transition-property
+
+- transition-duration
+
+- transition-timing-function
+
+- transition-delay
+
+You have to list the values without naming them individually. Values skipped will be assigned their default values. 
+
+**Syntax**
+
+transition: property duration timing-function delay;
+
+**Example**
+
+transition: margin-left2s ease-in-out 0.5s;
+
+##### Animations and @keyframes
+**animation property:**
+
+**Syntax**
+
+animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+
+**Example**
+```css
+.sample-class {
+    animation: none 2 ease 0.5 4 normal none running;
+}
+```
+The animation property is a shorthand for the sub-properties below:
+
+```
+animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count
+animation-direction
+animation-fill-mode
+animation-play-state
+```
+The values not mentioned are given default values.
+
+Animation-name property is used to tie-in the @keyframes rule.
+
+#### @keyframes
+
+**Syntax**
+
+```css
+@keyframes mymove {
+  from {property: value}
+  to { property: value }
+}
+```
+**Example**
+```css
+@keyframes animation-name {
+    from {bottom: 0px;}
+    to {bottom: 100px;}
+}
+```
+Percentage denotes the timing of the animation. 
+
+**Alternative syntax**
+
+```css
+@keyframes animation-name {
+/* declare actions here */
+}
+```
+**Example**
+```css
+@keyframes animation-name {
+    0%,100%{
+        background-color: blue;
+    }
+    50% {
+        background-color: green;
+    }
+}
+```
+##### Multiple animations
+Works the same as regular animation, multiple rules can be set. 
+```css
+#some-class{
+    animation: animation-a 2s linear infinite alternate, 
+        animation-b 3s ease infinite alternate;
+}  
+```
