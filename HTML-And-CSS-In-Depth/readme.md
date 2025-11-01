@@ -49,5 +49,5 @@ Apply the skills you learned in this course to introduce more advanced styling i
 
 ### Time Invested in the Training
 
-- **Total Hours:** 504 minutes (currently being updated)
+- **Total Hours:** 534 minutes (currently being updated)
 - **Last updated:** 23/02/2025
